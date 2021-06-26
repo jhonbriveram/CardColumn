@@ -1,0 +1,84 @@
+:root {
+  /* Primary */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* Neutral */
+  --transparent-white: hsla(0, 0%, 100%, 0.75); /* (paragraphs) */
+  --very-light-gray: hsl(0, 0%, 95%); /* (background, headings, buttons): */
+}
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 15px;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.main-grid {
+  margin: 90px 150px;
+  overflow: hidden;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 55%;
+}
+img {
+  display: flex;
+  width: 37px;
+  /*   margin: 30px 30px 30px; */
+}
+h2 {
+  text-transform: uppercase;
+  color: Var(--very-light-gray);
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+section p {
+  margin-top: 30px;
+  color: var(--transparent-white);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+.main-grip__section-one {
+  background-color: var(--bright-orange);
+  padding: 40px 32px 40px 32px;
+}
+.main-grip__section-two {
+  background-color: var(--dark-cyan);
+  padding: 40px 34px 40px 34px;
+}
+.main-grip__section-three {
+  background-color: var(--very-dark-cyan);
+  padding: 40px 30px 40px 30px;
+  text-align: left;
+}
+button {
+  margin: 90px 0px 10px 0px;
+  border-radius: 50px;
+  font-family: "Lexend Deca", sans-serif;
+  border: none;
+  height: 45px;
+  width: 130px;
+  background: var(--very-light-gray);
+}
+button:hover {
+  cursor: pointer;
+}
+
+.btn-one {
+  color: var(--bright-orange);
+}
+.btn-two {
+  color: var(--dark-cyan);
+}
+.btn-three {
+  color: var(--very-dark-cyan);
+}
